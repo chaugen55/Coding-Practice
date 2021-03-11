@@ -1,1 +1,1 @@
-// This is going to be the file for my components lecture
+// This is going to be the file for my components lecture.
