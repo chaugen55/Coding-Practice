@@ -5,7 +5,7 @@ import Person from './Person/Person';
 const App = props => {
   const [ peopleState, setPeopleState ] = useState({
     people: [
-      { name: 'Christian', age: 27 },
+      { name: 'Christian', age: 27 , job: 'Programmer'},
       { name: 'Nisma', age: 24 },
       { name: 'Leak', age: 26 },
     ],
@@ -26,21 +26,27 @@ console.log(peopleState);
     });
   };
 
+
+
   return (
     <div className="App">
       <h1>Hi, I'm a React app</h1>
       <p>This is really working!!</p>
-      <button onClick={switchNameHandler.bind(this, 'still trying to understand this ish')}>Switch Name</button>
+      <br/>
+      <button className='Button' onClick={switchNameHandler.bind(this, 'Christian Haugen')}>Click this to switch some stuff around</button>
+      <br/>
       <Person 
         name={peopleState.people[0].name} 
         age={peopleState.people[0].age} />
       <Person 
         name={peopleState.people[1].name} 
         age={peopleState.people[1].age} 
-        click={switchNameHandler}/>
+        click={switchNameHandler}>This is props.children (living in App.js but being passed through to the Person.js component)</Person>
+      <br/>
       <Person 
         name={peopleState.people[2].name} 
         age={peopleState.people[2].age} />
+      <br/>
     </div>
   );
 

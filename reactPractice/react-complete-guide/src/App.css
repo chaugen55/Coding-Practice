@@ -2,3 +2,19 @@
   text-align: center;
 }
 
+.Person {
+  font-size: 30px;
+  border: 2px;
+  border-color: rgb(65, 225, 65);
+  border-radius: 75px;
+  background-color: royalblue;
+  padding: 10px;
+  color: #000;
+  margin: 15px;
+}
+
+.Button {
+  color: rgb(18, 60, 177);
+  background-color: aquamarine;
+  border-radius: 7px;
+}
