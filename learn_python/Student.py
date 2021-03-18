@@ -70,12 +70,12 @@ class Student:
         #TODO need to figure out how to save data in a program so students don't lose their progress
 
 
-christian = Student('Christian', is_beginner=False)
+# christian = Student('Christian', is_beginner=False)
 
-christian.has_learned_concept('Numbers')
-christian.has_learned_concept('Puppies')
-christian.has_learned_multiple_concepts(['Strings', 'Lists', 'Functions'])
-christian.print_total_progress()
-print(christian.progress)
-christian.print_concepts_learned_so_far()
-print(christian.is_beginner)
+# christian.has_learned_concept('Numbers')
+# christian.has_learned_concept('Puppies')
+# christian.has_learned_multiple_concepts(['Strings', 'Lists', 'Functions'])
+# christian.print_total_progress()
+# print(christian.progress)
+# christian.print_concepts_learned_so_far()
+# print(christian.is_beginner)

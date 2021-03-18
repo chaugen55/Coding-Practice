@@ -1,5 +1,6 @@
 import tkinter as tk
-
+from get_user_input import *
+from Student import *
 
 class Application(tk.Frame):
     def __init__(self, master=None):
@@ -18,10 +19,20 @@ class Application(tk.Frame):
         print('Hey there, everyone!')
 
 
+user = get_user_name()
+proficiency = get_user_proficiency(user)
+student = Student(user, proficiency)
+
+student.has_learned_concept('Numbers')
+student.has_learned_concept('Puppies')
+student.has_learned_multiple_concepts(['Strings', 'Lists', 'Functions'])
+student.print_total_progress()
+print(student.progress)
+student.print_concepts_learned_so_far()
+print(student.is_beginner)
 
 
-
-root = tk.Tk(screenName="Let's learn Python!", baseName="main_window")
+root = tk.Tk(className="Let's learn Python!")
 
 
 root.mainloop()
