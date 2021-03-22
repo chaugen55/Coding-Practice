@@ -22,7 +22,6 @@ class Application(tk.Frame):
         self.hi_there["command"] = self.say_hi
         self.hi_there.pack({"side": "left"})
 
-
         for topic in self.topic_buttons_to_create:
             name = str(topic['class_name'])
             side = "top"
@@ -46,7 +45,7 @@ student = Student(user, proficiency)
 
 student.has_learned_topic('Numbers')
 student.has_learned_topic('Puppies')
-student.has_learned_multiple_topics(topics =['Strings', 'Lists', 'Functions'])
+student.has_learned_multiple_topics(topics =['Strings', 'Lists', 'Functions', 'Kitties'])
 student.print_total_progress()
 print(student.progress)
 student.print_topics_learned_so_far()
