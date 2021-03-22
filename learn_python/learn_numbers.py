@@ -1,0 +1,2 @@
+TYPES = ('Integers', 'Floats')
+
