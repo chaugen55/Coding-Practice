@@ -12,7 +12,6 @@ class Application(tk.Frame):
         self.say_hi = tk.Button(self)
         self.say_hi =['text'] = 'Hello, world! \n(click me)'
         self.say_hi =['command'] = self.welcome
-        self.say_hi = tk.Button(self)
 
     def welcome(self):
         print('Hey there, everyone!')
