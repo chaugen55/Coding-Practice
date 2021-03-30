@@ -8,9 +8,11 @@ curriculum = [
     {'class_name': 'Lists'},
     {'class_name': 'Booleans'},
     {'class_name': 'Dictionaries'},
+
     {'class_name': 'Conditionals'},
     {'class_name': 'Operators: And, Or, Not'},
     {'class_name': 'Operators: Comparison'},
+    
     {'class_name': 'For Loops'},
     {'class_name': 'While Loops'},
     {'class_name': 'Functions'},
